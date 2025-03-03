@@ -1,0 +1,67 @@
+cff-version: 1.2.0
+title: Multi-striding Experimental Framework
+message: >-
+  Please also cite the paper "Multi-Strided Access Patterns
+  to Boost Hardware Prefetching" by Miguel O. Blom, Kristian
+  F. D. Rietveld and Rob V. van Nieuwpoort
+  (https://doi.org/10.1145/3676151.3719375).
+type: software
+authors:
+  - given-names: Miguel O.
+    family-names: Blom
+    email: m.o.blom@liacs.leidenuniv.nl
+    affiliation: 'LIACS, Leiden University, Leiden, The Netherlands'
+    orcid: 'https://orcid.org/0009-0003-2174-9184'
+  - given-names: Kristian F. D.
+    family-names: Rietveld
+    affiliation: 'LIACS, Leiden University, Leiden, The Netherlands'
+    email: k.f.d.rietveld@liacs.leidenuniv.nl
+    orcid: 'https://orcid.org/0000-0003-0455-3430'
+  - given-names: Rob V.
+    family-names: van Nieuwpoort
+    orcid: 'https://orcid.org/0000-0002-2947-9444'
+    affiliation: 'LIACS, Leiden University, Leiden, The Netherlands'
+    email: r.v.van.nieuwpoort@liacs.leidenuniv.nl
+identifiers:
+  - type: doi
+    value: 10.1145/3676151.3719375
+    description: >-
+      Multi-Strided Access Patterns to Boost Hardware
+      Prefetching
+  - type: doi
+    value: 10.5281/zenodo.14960635
+    description: Multi-striding Experimental Framework v.1.0.0
+repository-code: 'https://github.com/MiguelOBlom/MEF'
+abstract: >+
+  The Multi-striding Experimental Framework is used to
+  execute the experiments found in the associated paper
+  “Multi-Strided Access Patterns to Boost Hardware
+  Prefetching” authored by Blom et al.. This framework
+  supports three experiments. The first conducted experiment
+  explores the usage of multi-striding in micro-kernels
+  performing aligned, unaligned and non-temporal load and
+  store data movement operations. The second experiment
+  consists of a comparison of different striding
+  configurations for various relevant compute kernels, some
+  taken from PolyBench, while preserving the number of
+  executed instructions across configurations. The latter
+  indicates that the same number of loads and stores are
+  performed for all codes, even if these can be optimized
+  out for some. The last experiment compares striding
+  configurations, where the aforementioned loads and stores
+  are optimized out, to various state-of-the-art
+  implementations. This framework is used to execute these
+  experiments with ease by automatically generating assembly
+  codes through parameterized scripts, test the results of
+  the performed operations and run baseline or control
+  implementations.
+
+keywords:
+  - Hardware Prefetcher
+  - Access Patterns
+  - Memory-Bound Compute Kernels
+  - Software Optimization
+license: Apache-2.0
+commit: 12b2463
+version: v.1.0.0
+date-released: '2025-03-03'
